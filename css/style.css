@@ -3,6 +3,7 @@ body {
   font-size: 17px;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: #FFF5E9;
 }
 
 .wrapper {
@@ -159,4 +160,115 @@ a {
 
 iframe {
   border: unset;
+}
+
+/* nav bar */
+
+.navbar-default {
+    border: none;
+    background-color: transparent;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    font-size: 28px;
+    color: #663500;
+    font-family: ivymode, sans-serif;
+    font-weight: 600;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: #ccdfcb;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #ccdfcb;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #222!important;
+    border-bottom: medium solid #ccdfcb;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    border-bottom: medium solid #ccdfcb;
+}
+
+/* .navbar-about {
+  font-family: futura-pt, sans-serif;
+  font-size: 22px;
+  color: #663500;
+}
+
+.navbar-about--selected {
+  font-weight: 500;
+  border-bottom: 2px solid #663500;
+} */
+
+@media(min-width:768px) {
+    .navbar-default {
+        border: none;
+    }
+
+    /*nav link color - black*/
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: #222;
+    }
+
+    /*nav link color on hover - gray*/
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: gray;
+    }
+
+    .navbar-default.affix {
+        border: none;
+    }
+
+    /*nav link color - purple*/
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 30px;
+        color: #663500;
+    }
+
+    /*nav link color - black*/
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    /*nav link color on hover - gray*/
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: gray;
+    }
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: #333;
+    height: 500px;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
 }
