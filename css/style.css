@@ -10,6 +10,8 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #FFF5E9;
+  display: flex;
+  flex-direction: column;
   webkit-tap-highlight-color: #222;
 }
 
@@ -54,14 +56,18 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
+    flex: 1 0 auto;
 }
 section#bonjour {
-    padding-top: 200px;
+    padding-top: 100px;
+}
+section#subsection {
+    padding: 0;
 }
 
 footer {
-    padding-bottom: 25px;
+  flex-shrink: 0;
 }
 
 .navbar-default {
@@ -233,4 +239,45 @@ img::selection {
 img::-moz-selection {
     color: #fff;
     background: 0 0;
+}
+
+.section {
+  display: none;
+}
+.section.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  top:auto;
+  right: 25px;
+  left: auto;
+}
+.fixed-button:hover {
+  cursor: default;
+  font-weight: bold;
+}
+
+.section-1 {
+  background-image: url("../img/90s_background.png");
+}
+
+.subsection {
+  display: flex;
+  justify-content: space-between;
 }

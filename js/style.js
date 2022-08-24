@@ -7,6 +7,15 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    var $section = $('.section');
+
+    $("#load-more").click(function() {
+        // Prevent event if disabled
+        if ($(this).hasClass('disable')) return;
+
+        var $hidden = $section.filter(':hidden:first').addClass('active');
+    });
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -43,6 +52,7 @@
     })
 
     // Initialize WOW.js Scrolling Animations
-    new WOW().init();
+    $('.wow:not([data-wow-delay])').attr('data-wow-delay', '0.3s');
+    new WOW().init({ offset: 50 });
 
 })(jQuery); // End of use strict
