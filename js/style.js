@@ -7,14 +7,14 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    var $section = $('.section');
-
-    $("#load-more").click(function() {
-        // Prevent event if disabled
-        if ($(this).hasClass('disable')) return;
-
-        var $hidden = $section.filter(':hidden:first').addClass('active');
-    });
+    // var $section = $('.section');
+    //
+    // $("#load-more").click(function() {
+    //     // Prevent event if disabled
+    //     if ($(this).hasClass('disable')) return;
+    //
+    //     var $hidden = $section.filter(':hidden:first').addClass('active');
+    // });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {

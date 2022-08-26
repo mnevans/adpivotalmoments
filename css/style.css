@@ -242,12 +242,14 @@ img::-moz-selection {
 }
 
 .section {
-  display: none;
-}
-.section.active {
+  /* display: none; */
   display: flex;
   flex-direction: column;
 }
+/* .section.active {
+  display: flex;
+  flex-direction: column;
+} */
 
 .centered {
   display: flex;
@@ -273,11 +275,19 @@ img::-moz-selection {
   font-weight: bold;
 }
 
-.section-1 {
+.subsection {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bg-1 {
   background-image: url("../img/90s_background.png");
 }
 
-.subsection {
-  display: flex;
-  justify-content: space-between;
+.bg-2 {
+  background-image: url("../img/codeps_background.png");
+}
+
+.bg-3 {
+  background-image: url("../img/apps_bg.png");
 }
