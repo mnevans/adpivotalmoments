@@ -74,3 +74,5 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+var s = skrollr.init();
