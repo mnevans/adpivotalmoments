@@ -281,7 +281,7 @@ img::-moz-selection {
 
 .subsection {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .parallax {
@@ -470,6 +470,11 @@ img::-moz-selection {
 }
 
 @media (min-width: 1025px) {
+  .subsection {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   .moment-row {
     flex-direction: row;
     justify-content: space-between;
