@@ -38,11 +38,23 @@ a:focus {
     text-decoration: none;
 }
 
+h1{
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 72px;
+  font-weight: 800;
+  color: #597449;
+}
+
 h2{
   font-family: 'Roboto Flex', sans-serif;
   font-size: 28px;
   font-weight: 800;
   color: #663500;
+}
+
+.timeline-text {
+  font-size: 22px;
+  color: #597449;
 }
 
 h4{
@@ -427,6 +439,7 @@ img::-moz-selection {
   height: 250px;
   box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.1);
   transition: all 0.35s ease-in;
+  background-size: cover;
 }
 
 .rectangle:hover {
@@ -451,18 +464,15 @@ img::-moz-selection {
 }
 
 .rectangle-one {
-  /* background-color: rgba(138, 198, 249, 0.2); */
-  background-image: url("../img/90s_background.png");
+  background-image: url("../img/apps_bg.png");
 }
 
 .rectangle-two {
-  /* background-color: rgba(140, 220, 221, 0.2); */
   background-image: url("../img/codeps_background.png");
 }
 
 .rectangle-three {
-  /* background-color: rgba(218,217, 74, 0.2); */
-  background-image: url("../img/apps_bg.png");
+  background-image: url("../img/90s_background.png");
 }
 
 .moment-row-text {
@@ -500,25 +510,7 @@ img::-moz-selection {
   }
 
   .moment-title {
-    position: absolute;
-    font-size: 72px;
-  }
-
-  .moment-title-one {
-    top: 15%;
-    right: 15%;
-    text-align: right;
-  }
-
-  .moment-title-two {
-    top: 30%;
-    right: -15%;
-  }
-
-  .moment-title-three {
-    top: 40%;
-    left: 10%;
-    text-align: right;
+    font-size: 64px;
   }
 }
 
@@ -531,3 +523,11 @@ img::-moz-selection {
 .icon-width {
   width: 125px;
 }
+
+.eapps-widget:hover .eapps-widget-toolbar {
+  display: none;
+  opacity: 0;
+}
+
+a img {display:none;}
+a:hover img {display:block;}
