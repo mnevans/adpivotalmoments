@@ -256,8 +256,8 @@ img::-moz-selection {
 .section {
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
-  padding: 150px 0;
+  min-height: 100vh;
+  /* padding: 150px 0; */
   justify-content: center;
   align-items: center;
 }
