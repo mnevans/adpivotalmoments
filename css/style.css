@@ -464,11 +464,11 @@ img::-moz-selection {
 }
 
 .rectangle-one {
-  background-image: url("../img/apps_bg.png");
+  background-image: url("../img/codeps_background.png");
 }
 
 .rectangle-two {
-  background-image: url("../img/codeps_background.png");
+  background-image: url("../img/apps_bg.png");
 }
 
 .rectangle-three {
